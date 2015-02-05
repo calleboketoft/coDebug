@@ -2,10 +2,14 @@ angular.module('coDebug', [
     'cfp.hotkeys'
 ])
 
-.config(function($logProvider) {
+.constant('coDebugConfig', {
+    debugMode: false
+})
+
+.config(function($logProvider, coDebugConfig) {
     // Enable debug mode by sessionStorage.setItem(debugKey, '1');
     var debugKey = 'debug';
-    if (!sessionStorage.getItem(debugKey)) {
+    if (!sessionStorage.getItem(debugKey) || !coDebugConfig.debugMode) {
         $logProvider.debugEnabled(false); // $log.debug() is enabled by default in AngularJS
     }
 })
