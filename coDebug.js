@@ -1,6 +1,6 @@
 // Disables console.debug if localStorage.debug
 
-export default angular.module('coDebugMode', [])
+export default angular.module('coDebug', [])
 
 .config(() => {
 
