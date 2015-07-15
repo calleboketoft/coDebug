@@ -2,7 +2,7 @@
   "name": "codebug",
   "version": "0.1.0",
   "description": "disables console.debug depending on localStorage flag",
-  "main": "coDebug.ts",
+  "main": "coDebug.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/calleboketoft/coDebug#readme",
   "jspm": {
-    "main": "coDebug.ts",
     "format": "es6"
   }
 }
