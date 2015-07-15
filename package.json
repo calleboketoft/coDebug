@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/calleboketoft/coDebug/issues"
   },
-  "homepage": "https://github.com/calleboketoft/coDebug#readme"
+  "homepage": "https://github.com/calleboketoft/coDebug#readme",
+  "jspm": {
+    "main": "coDebug.ts",
+    "format": "es6"
+  }
 }
